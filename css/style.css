@@ -910,3 +910,9 @@ a:focus {
   padding: 20px;
   width: fit-content;
 }
+
+.doctor-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
