@@ -1,3 +1,23 @@
+
+try {
+    setTimeout(() => {
+        const calendars = document.getElementsByClassName("calendar-widget") 
+
+        for(let i=0; i<calendars.length; i++) {
+            try {
+                const calendar = calendars[i];
+                const frame = calendar.getElementsByTagName("iframe")[0];
+
+                frame.style.minHeight = "500px";
+            } catch(e) {
+                console.error(e);
+            }
+        } 
+    }, 3500);
+} catch(e) {
+    console.error(e);
+}
+
 // to get current year
 function getYear() {
     var currentDate = new Date();
