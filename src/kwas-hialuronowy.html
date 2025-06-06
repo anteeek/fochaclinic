@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniekcje z kwasu hialuronowego</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen overflow-x-hidden">
+  <header id="main-header"></header>
+  <main class="w-full max-w-full overflow-x-hidden min-h-[60vh] flex flex-col items-center justify-center px-4 py-12">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#31464b] mb-6 text-center">Iniekcje z kwasu hialuronowego</h1>
+    <p class="text-lg text-gray-700 max-w-2xl text-center mb-8">Kwas hialuronowy to naturalny składnik mazi stawowej, który odpowiada za prawidłowe nawilżenie i elastyczność stawów. Iniekcje z kwasu hialuronowego są nowoczesną i skuteczną metodą leczenia bólu oraz poprawy funkcji stawów, szczególnie w przebiegu choroby zwyrodnieniowej.</p>
+    <div class="max-w-3xl text-gray-800 space-y-6">
+      <p><strong>Na czym polega zabieg?</strong><br>Iniekcja polega na podaniu preparatu kwasu hialuronowego bezpośrednio do stawu. Zabieg wykonywany jest w warunkach ambulatoryjnych, często pod kontrolą USG, co zapewnia precyzję i bezpieczeństwo. Kwas hialuronowy działa jak "sztuczna maź stawowa" – poprawia poślizg powierzchni stawowych, zmniejsza tarcie i chroni chrząstkę.</p>
+      <p><strong>Kiedy warto rozważyć iniekcje?</strong><br>Najczęstsze wskazania to:
+        <ul class="list-disc ml-6 mt-2">
+          <li>Choroba zwyrodnieniowa stawów (szczególnie kolan, bioder, barków, skokowych)</li>
+          <li>Bóle stawów po urazach</li>
+          <li>Ograniczenie ruchomości stawu</li>
+          <li>Profilaktyka u osób aktywnych fizycznie i sportowców</li>
+        </ul>
+      </p>
+      <p><strong>Korzyści z zabiegu:</strong><br>
+        <ul class="list-disc ml-6 mt-2">
+          <li>Zmniejszenie bólu i sztywności stawu</li>
+          <li>Poprawa zakresu ruchu</li>
+          <li>Opóźnienie postępu choroby zwyrodnieniowej</li>
+          <li>Bezpieczna alternatywa dla leczenia farmakologicznego i operacyjnego</li>
+        </ul>
+      </p>
+      <p>Zabieg jest dobrze tolerowany, a efekt utrzymuje się zwykle od kilku miesięcy do roku. W razie potrzeby można go powtarzać. O kwalifikacji do iniekcji decyduje lekarz ortopeda po konsultacji i badaniu klinicznym.</p>
+    </div>
+  </main>
+  <footer id="main-footer"></footer>
+  <script src="js/main.js"></script>
+  <script>
+    fetch('index.html').then(r=>r.text()).then(html=>{
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      document.getElementById('main-header').innerHTML = doc.querySelector('header').outerHTML;
+      document.getElementById('main-footer').innerHTML = doc.querySelector('footer').outerHTML;
+    });
+  </script>
+</body>
+</html> 

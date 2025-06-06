@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zabiegi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen overflow-x-hidden">
+  <!-- Header copied from index.html -->
+  <header id="main-header"></header>
+ <div>
+  <main class="w-full max-w-full overflow-x-hidden min-h-[60vh] px-24 flex flex-col items-center justify-center">
+    <h1 class="text-5xl font-bold text-[#31464b] mb-6">lek. Łukasz Kasprzak</h1>
+    <h2 class="text-3xl font-bold text-[#31464b] mb-6">Specjalista ortopedii i traumatologii narządu ruchu</h1>
+    <img src="assets/stock.png" alt="lek. Michał Papiewski" class="w-[200px] mb-4">
+<p>
+  Lek. Łukasz Kasprzak jest absolwentem Wydziału Lekarskiego Akademii Medycznej w Lublinie. Od
+2004 roku zajmuje się kompleksowym leczeniem pacjentów w zakresie ortopedii i traumatologii,
+zarówno ambulatoryjnie, jak i operacyjnie. Tytuł specjalisty uzyskał w 2011 roku.
+Specjalizuje się w leczeniu urazów i schorzeń kończyn dolnych i górnych – w szczególności w zakresie
+stawu kolanowego, barkowego, łokciowego i skokowego. W codziennej praktyce wykonuje
+nowoczesne zabiegi artroskopowe, w tym szycie i resekcję łąkotek oraz rekonstrukcje więzadeł
+krzyżowych (ACL). Zajmuje się również leczeniem zespołów bólowych kręgosłupa oraz schorzeń
+zapalnych i przeciążeniowych.
+Uczestniczył w ponad 100 kursach, konferencjach i szkoleniach praktycznych z zakresu ortopedii i
+ultrasonografii. W swojej praktyce wykorzystuje zaawansowane metody terapii, takie jak iniekcje z
+
+kwasu hialuronowego, osocza bogatopłytkowego (PRP) oraz blokady przeciwzapalne pod kontrolą
+USG. Ceniony przez pacjentów za skuteczność, dokładność i zaangażowanie.
+</p>
+ </div>
+    
+  </main>
+  <!-- Footer copied from index.html -->
+  <footer id="main-footer"></footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Insert header and footer from index.html
+    fetch('index.html').then(r=>r.text()).then(html=>{
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      document.getElementById('main-header').innerHTML = doc.querySelector('header').outerHTML;
+      document.getElementById('main-footer').innerHTML = doc.querySelector('footer').outerHTML;
+    });
+  </script>
+</body>
+</html> 

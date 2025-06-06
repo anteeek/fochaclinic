@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pliki do pobrania</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen overflow-x-hidden">
+  <header id="main-header"></header>
+  <main class="w-full max-w-full overflow-x-hidden min-h-[60vh] flex flex-col items-center justify-center px-4 py-12">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#31464b] mb-8 text-center">Pliki do pobrania</h1>
+    <ul class="list-disc text-lg text-[#31464b] max-w-2xl w-full mx-auto space-y-4 pl-6">
+      <li><a href="assets/downloads/OrthoCare%20regulamin%20Focha.pdf" download class="hover:underline text-[#31464b]">OrthoCare regulamin Focha.pdf</a></li>
+      <li><a href="assets/downloads/Polityka%20ochrony%20danych%20osobowych%20w%20Klinice%20OrthoCare.pdf" download class="hover:underline text-[#31464b]">Polityka ochrony danych osobowych w Klinice OrthoCare.pdf</a></li>
+      <li><a href="assets/downloads/Zgoda%20na%20blokad%C4%99%20przykr%C4%99gos%C5%82upow%C4%85.pdf" download class="hover:underline text-[#31464b]">Zgoda na blokadę przykręgosłupową.pdf</a></li>
+      <li><a href="assets/downloads/Karta%20pacjenta.pdf" download class="hover:underline text-[#31464b]">Karta pacjenta.pdf</a></li>
+      <li><a href="assets/downloads/Zgoda%20na%20zabieg%20z%20u%C5%BCyciem%20PRP.pdf" download class="hover:underline text-[#31464b]">Zgoda na zabieg z użyciem PRP.pdf</a></li>
+      <li><a href="assets/downloads/Polityka%20cookies%20serwisu%20OrthoCare.pdf" download class="hover:underline text-[#31464b]">Polityka cookies serwisu OrthoCare.pdf</a></li>
+      <li><a href="assets/downloads/Regulamin%20serwisu%20internetowego%20OrthoCare.pdf" download class="hover:underline text-[#31464b]">Regulamin serwisu internetowego OrthoCare.pdf</a></li>
+      <li><a href="assets/downloads/Anonimowy%20Formularz%20Zg%C5%82aszania%20Incydent%C3%B3w%20Dotycz%C4%85cych%20Bezpiecze%C5%84stwa%20Ma%C5%82oletnich.pdf" download class="hover:underline text-[#31464b]">Anonimowy Formularz Zgłaszania Incydentów Dotyczących Bezpieczeństwa Małoletnich.pdf</a></li>
+      <li><a href="assets/downloads/Standardy%20ochrony%20ma%C5%82oletnich%20w%20Klinice%20OrthoCare.pdf" download class="hover:underline text-[#31464b]">Standardy ochrony małoletnich w Klinice OrthoCare.pdf</a></li>
+      <li><a href="assets/downloads/Zgoda%20na%20upublicznienie%20wizerunku.pdf" download class="hover:underline text-[#31464b]">Zgoda na upublicznienie wizerunku.pdf</a></li>
+      <li><a href="assets/downloads/Zgoda%20na%20iniekcj%C4%99%20pod%20kontrol%C4%85%20USG.pdf" download class="hover:underline text-[#31464b]">Zgoda na iniekcję pod kontrolą USG.pdf</a></li>
+    </ul>
+  </main>
+  <footer id="main-footer"></footer>
+  <script src="js/main.js"></script>
+  <script>
+    fetch('index.html').then(r=>r.text()).then(html=>{
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      document.getElementById('main-header').innerHTML = doc.querySelector('header').outerHTML;
+      document.getElementById('main-footer').innerHTML = doc.querySelector('footer').outerHTML;
+    });
+  </script>
+</body>
+</html> 
