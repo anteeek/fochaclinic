@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zabiegi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen overflow-x-hidden">
+  <!-- Header copied from index.html -->
+  <header id="main-header"></header>
+ <div>
+  <main class="w-full max-w-full overflow-x-hidden min-h-[60vh] px-24 flex flex-col items-center justify-center">
+    <h1 class="text-5xl font-bold text-[#31464b] mb-6">dr n. med. Grzegorz Glazer</h1>
+    <h2 class="text-3xl font-bold text-[#31464b] mb-6">Specjalista ortopedii i traumatologii narządu ruchu</h1>
+    <img src="assets/stock.png" alt="lek. Michał Papiewski" class="w-[200px] mb-4">
+<p>
+  Dr Grzegorz Glazer jest absolwentem Uniwersytetu Medycznego w Lublinie, który ukończył w 2011
+roku z wyróżnieniem. Po ukończeniu stażu rozpoczął pracę w Klinice Ortopedii i Traumatologii SPSK
+nr 4 w Lublinie, gdzie pracuje do dziś jako starszy asystent. W 2019 roku uzyskał tytuł doktora nauk
+medycznych, broniąc rozprawy pt. &quot;Wpływ jonów i drobin metali na trwałość protezoplastyki metal-
+metal&quot;.
+Specjalizuje się w diagnostyce i leczeniu schorzeń stawu biodrowego i kolanowego, ze szczególnym
+uwzględnieniem kwalifikacji do endoprotezoplastyki. Posiada bogate doświadczenie w prowadzeniu
+pacjentów po zabiegach wszczepienia endoprotez, monitorowaniu ich stanu klinicznego oraz leczeniu
+powikłań. W swojej praktyce wykorzystuje również ultrasonografię ortopedyczną.
+Od lat uczestniczy w ogólnopolskich i międzynarodowych konferencjach naukowych, a także kursach
+specjalistycznych z zakresu protezoplastyki i nowoczesnych metod leczenia zachowawczego. W
+codziennej pracy wyróżnia się spokojem, precyzją i kompleksowym podejściem do pacjenta.
+</p>
+ </div>
+    
+  </main>
+  <!-- Footer copied from index.html -->
+  <footer id="main-footer"></footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Insert header and footer from index.html
+    fetch('index.html').then(r=>r.text()).then(html=>{
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      document.getElementById('main-header').innerHTML = doc.querySelector('header').outerHTML;
+      document.getElementById('main-footer').innerHTML = doc.querySelector('footer').outerHTML;
+    });
+  </script>
+</body>
+</html> 

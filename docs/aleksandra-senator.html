@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zabiegi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen overflow-x-hidden">
+  <!-- Header copied from index.html -->
+  <header id="main-header"></header>
+ <div>
+  <main class="w-full max-w-full overflow-x-hidden min-h-[60vh] px-24 flex flex-col items-center justify-center">
+    <h1 class="text-5xl font-bold text-[#31464b] mb-6">Aleksandra Senator</h1>
+    <h2 class="text-3xl font-bold text-[#31464b] mb-6">Mgr Pielęgniarstwa</h1>
+    <img src="assets/stock.png" alt="lek. Michał Papiewski" class="w-[200px] mb-4">
+<p>
+  Absolwentka studiów magisterskich na kierunku pielęgniarstwo w Akademii Humanistyczno-
+  Ekonomicznej w Łodzi (filia w Warszawie). Swoje doświadczenie zawodowe zdobywa m.in. w
+  Szpitalnym Oddziale Ratunkowym oraz w Pogotowiu Ratunkowym, gdzie kluczowe znaczenie mają:
+  szybkie podejmowanie decyzji, działanie pod presją czasu i skuteczna komunikacja — zarówno z
+  zespołem medycznym, jak i z pacjentami.
+  Specjalizuje się w pielęgniarstwie anestezjologicznym i intensywnej opiece. Łączy solidne
+  przygotowanie teoretyczne z praktyką zdobytą w wymagających i dynamicznych warunkach pracy.
+  Cechuje ją wielozadaniowość, rzetelność oraz wysoka odporność na sytuacje kryzysowe.
+  W swojej pracy szczególną wagę przywiązuje do empatii, troski o komfort i bezpieczeństwo pacjenta
+  oraz indywidualnego podejścia do każdego przypadku. Z pełnym zaangażowaniem dąży do ciągłego
+  rozwoju zawodowego i osobistego, traktując każdą sytuację jako okazję do nauki i niesienia realnej
+  pomocy drugiemu człowiekowi.
+</p>
+ </div>
+    
+  </main>
+  <!-- Footer copied from index.html -->
+  <footer id="main-footer"></footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Insert header and footer from index.html
+    fetch('index.html').then(r=>r.text()).then(html=>{
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      document.getElementById('main-header').innerHTML = doc.querySelector('header').outerHTML;
+      document.getElementById('main-footer').innerHTML = doc.querySelector('footer').outerHTML;
+    });
+  </script>
+</body>
+</html> 

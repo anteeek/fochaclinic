@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zabiegi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen overflow-x-hidden">
+  <!-- Header copied from index.html -->
+  <header id="main-header"></header>
+ <div>
+  <main class="w-full max-w-full overflow-x-hidden min-h-[60vh] px-24 flex flex-col items-center justify-center">
+    <h1 class="text-5xl font-bold text-[#31464b] mb-6">Aleksandra Nowocień</h1>
+    <h2 class="text-3xl font-bold text-[#31464b] mb-6">Rejestratorka medyczna</h1>
+    <img src="assets/stock.png" alt="lek. Michał Papiewski" class="w-[200px] mb-4">
+<p>
+  Z OrthoCare związana od pierwszego dnia działalności kliniki. Odpowiada za organizację pracy
+  rejestracji, kontakt z pacjentami oraz sprawny przebieg procesu umawiania wizyt. To ona jako
+  pierwsza wita pacjentów — telefonicznie i osobiście — i dba o to, by każda osoba, która trafia do
+  naszej kliniki, czuła się zauważona, wysłuchana i potraktowana z należytą uwagą.
+  Dzięki doskonałej organizacji, cierpliwości i empatii potrafi odnaleźć się nawet w najbardziej
+  wymagających sytuacjach. Z łatwością łączy codzienne obowiązki administracyjne z budowaniem
+  pozytywnych relacji z pacjentami, dla których często jest pierwszym i stałym punktem kontaktu z
+  OrthoCare.
+  Wyróżnia ją naturalna życzliwość, wysoka kultura osobista oraz umiejętność zachowania spokoju
+  nawet w trudnych momentach. Swoją pracę traktuje nie tylko jako obowiązek, ale jako realny wpływ
+  na jakość doświadczenia pacjenta — od pierwszego telefonu aż po zakończoną wizytę.
+</p>
+ </div>
+    
+  </main>
+  <!-- Footer copied from index.html -->
+  <footer id="main-footer"></footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Insert header and footer from index.html
+    fetch('index.html').then(r=>r.text()).then(html=>{
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      document.getElementById('main-header').innerHTML = doc.querySelector('header').outerHTML;
+      document.getElementById('main-footer').innerHTML = doc.querySelector('footer').outerHTML;
+    });
+  </script>
+</body>
+</html> 

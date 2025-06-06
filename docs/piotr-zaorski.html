@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zabiegi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen overflow-x-hidden">
+  <!-- Header copied from index.html -->
+  <header id="main-header"></header>
+ <div>
+  <main class="w-full max-w-full overflow-x-hidden min-h-[60vh] px-24 flex flex-col items-center justify-center">
+    <h1 class="text-5xl font-bold text-[#31464b] mb-6">lek. Piotr Zaorski</h1>
+    <h2 class="text-3xl font-bold text-[#31464b] mb-6">Specjalista ortopedii i traumatologii narządu ruchu, chirurg ręki</h1>
+    <img src="assets/stock.png" alt="lek. Michał Papiewski" class="w-[200px] mb-4">
+<p>
+  Lek. Piotr Zaorski jest absolwentem I Wydziału Lekarskiego Warszawskiego Uniwersytetu
+Medycznego. Posiada wieloletnie doświadczenie w chirurgii ręki, które zdobywał m.in. jako starszy
+asystent w Klinice Chirurgii Ręki Uniwersyteckiego Szpitala Klinicznego w Łodzi (2017–2024). Od 2010
+roku związany z Carolina Medical Center, a od 2022 roku pracuje również w Instytucie Medycznym
+MSWiA oraz Szpitalu Powiatowym w Opocznie.
+Specjalizuje się w leczeniu schorzeń ręki, nadgarstka i łokcia – zarówno pourazowych, jak i
+zwyrodnieniowych. Wykonuje małoinwazyjne zabiegi artroskopowe, w tym artroskopię nadgarstka i
+kolana, a także zabiegi w znieczuleniu WALANT: operacje cieśni nadgarstka, palca trzaskającego i
+przykurczu Dupuytrena. Stosuje również hydrodekompresję nerwu pośrodkowego.
+Odbył zagraniczne staże m.in. w Chinach (Shanghai, Fudan University Huashan Hospital) i we
+Włoszech (Savona, Centro Regionale di Chirurgia della Mano). W swojej karierze leczył zawodników
+sportów walki, bokserów i piłkarzy. Znany jest z wysokiej precyzji zabiegów i indywidualnego
+podejścia do pacjenta.
+</p>
+ </div>
+    
+  </main>
+  <!-- Footer copied from index.html -->
+  <footer id="main-footer"></footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Insert header and footer from index.html
+    fetch('index.html').then(r=>r.text()).then(html=>{
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      document.getElementById('main-header').innerHTML = doc.querySelector('header').outerHTML;
+      document.getElementById('main-footer').innerHTML = doc.querySelector('footer').outerHTML;
+    });
+  </script>
+</body>
+</html> 
