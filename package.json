@@ -7,7 +7,7 @@
     "build": "tailwindcss -i ./src/input.css -o ./src/dist/output.css",
     "watch": "tailwindcss -i ./src/input.css -o ./src/dist/output.css --watch",
     "start": "npx serve src",
-    "publish": "npm run build && cp -rf src/* docs/"
+    "publish": "rm -rf docs && mkdir docs && npm run build && cp -rf src/* docs/"
   },
   "keywords": [],
   "author": "",
