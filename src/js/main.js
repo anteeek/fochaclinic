@@ -114,10 +114,10 @@ function handleOpinionsCarousel() {
     const nextBtn = document.getElementById('opinions-next');
     const dotsContainer = document.getElementById('opinions-dots');
     let current = 0;
-    let slidesToShow = 3;
+    let slidesToShow = 1; // Always show only 1 slide
 
     function updateSlidesToShow() {
-        slidesToShow = window.innerWidth < 768 ? 1 : 3;
+        slidesToShow = 1; // Always 1
     }
 
     function updateCarousel() {

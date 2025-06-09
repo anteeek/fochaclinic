@@ -1110,8 +1110,8 @@ video {
   --tw-bg-opacity: 0.4;
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .from-\[\#B4CBD1\] {

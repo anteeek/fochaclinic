@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klinika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen overflow-x-hidden">
+  <!-- Header copied from index.html -->
+  <!--HEADER-->
+  <!-- Will be replaced with actual header code from index.html -->
+  <header id="main-header"></header>
+  <main class="w-full max-w-full overflow-x-hidden min-h-[60vh] flex items-center justify-center">
+  
+  <!-- Footer copied from index.html -->
+  <!--FOOTER-->
+  <!-- Will be replaced with actual footer code from index.html -->
+
+
+        <!-- Contact Section -->
+        <section class="w-full py-16 bg-white relative">
+          <div class="max-w-7xl mx-auto px-0 flex flex-col items-center">
+              <h2 class="text-4xl md:text-5xl font-serif font-semibold text-center mb-12">Skontaktuj się z nami</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mx-auto">
+                  <!-- Adres -->
+                  <div class="bg-white rounded-2xl border border-gray-300 p-8 flex flex-col items-center shadow-sm">
+                      <div class="text-[#B4CBD1] text-3xl mb-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                              stroke="currentColor" class="w-8 h-8">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zm0 0c-3.314 0-6 2.239-6 5v1a1 1 0 001 1h10a1 1 0 001-1v-1c0-2.761-2.686-5-6-5z" />
+                          </svg>
+                      </div>
+                      <div class="font-semibold mb-2">Adres</div>
+                      <div class="text-gray-700 text-center">marsz. Ferdynanda Focha 12/9, 26-600 <br /> Radom</div>
+                  </div>
+                  <!-- Godziny otwarcia -->
+                  <div class="bg-white rounded-2xl border border-gray-300 p-8 flex flex-col items-center shadow-sm">
+                      <div class="text-[#B4CBD1] text-3xl mb-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                              stroke="currentColor" class="w-8 h-8">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                      </div>
+                      <div class="font-semibold mb-2">Godziny otwarcia</div>
+                      <div class="text-gray-700 text-center">poniedziałek-piątek: 8:00 - 20:00<br>sobota, niedziela i
+                          święta: nieczynne</div>
+                  </div>
+                  <!-- Telefon -->
+                  <div class="bg-white rounded-2xl border border-gray-300 p-8 flex flex-col items-center shadow-sm">
+                      <div class="text-[#B4CBD1] text-3xl mb-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                              stroke="currentColor" class="w-8 h-8">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 10a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm10-10a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 10a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                          </svg>
+                      </div>
+                      <div class="font-semibold mb-2">Telefon</div>
+                      <div class="text-gray-700 text-center">+48 889 817 012 <br />
+                          +48 889 834 936
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </main>
+  <footer id="main-footer"></footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Insert header and footer from index.html
+    fetch('index.html').then(r=>r.text()).then(html=>{
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      document.getElementById('main-header').innerHTML = doc.querySelector('header').outerHTML;
+      document.getElementById('main-footer').innerHTML = doc.querySelector('footer').outerHTML;
+    });
+  </script>
+</body>
+</html> 
