@@ -30,10 +30,11 @@
         }
 
         *,
-::before,
-::after {
-  box-sizing: border-box; /* 1 */
-}
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            /* 1 */
+        }
     </style>
 </head>
 
@@ -44,8 +45,8 @@
         <div class="w-full border-b border-gray-200">
             <div class="w-full px-2 lg:px-24 py-4">
                 <div class="flex items-center">
-                    <a href="https://www.instagram.com/klinika_orthocare/" class="text-gray-400 hover:text-[#B4CBD1] pl-4"
-                        aria-label="Instagram">
+                    <a href="https://www.instagram.com/klinika_orthocare/"
+                        class="text-gray-400 hover:text-[#B4CBD1] pl-4" aria-label="Instagram">
                         <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <rect width="16" height="16" x="4" y="4" rx="4" stroke-width="2" />
                             <circle cx="12" cy="12" r="3.2" stroke-width="2" />
@@ -69,34 +70,33 @@
             <div class="flex items-center justify-between w-full mx-2">
                 <!-- Logo -->
                 <a href="/" class="flex items-center space-x-2">
-                    <img style="width: 250px; min-width: 125px !important" src="assets/logo4.png" alt="Logo" class="object-cover">
+                    <img style="width: 300px; min-width: 200px !important" src="assets/logo4.png" alt="Logo"
+                        class="object-cover">
                 </a>
 
                 <!-- Navigation Menu -->
-                <div class="hidden md:flex items-center justify-around w-full space-x-2 lg:space-x-8 px-2 lg:px-24">
+                <div class="hidden md:flex items-center justify-around w-full space-x-2 lg:space-x-8 px-2 lg:px-12">
                     <a href="/klinika"
                         class="text-gray-600 hover:text-[#B4CBD1] transition-colors lg:text-xl font-medium">Klinika</a>
                     <a href="/zespol"
                         class="text-gray-600 hover:text-[#B4CBD1] transition-colors lg:text-xl font-medium">Zespół</a>
-                    <a href="/zabiegi"
-                        class="text-gray-600 hover:text-[#B4CBD1] transition-colors lg:text-xl font-medium">Zabiegi</a>
                     <a href="/cennik"
-                        class="text-gray-600 hover:text-[#B4CBD1] transition-colors lg:text-xl font-medium">Cennik</a>
+                        class="text-gray-600 hover:text-[#B4CBD1] transition-colors lg:text-xl font-medium">Usługi i cennik</a>
                     <a href="/blog"
-                        class="text-gray-600 hover:text-[#B4CBD1] transition-colors lg:text-xl font-medium">Blog</a>
+                        class="text-gray-600 hover:text-[#B4CBD1] transition-colors lg:text-xl font-medium">Poradnik zdrowia</a>
                 </div>
 
                 <!-- Action Buttons -->
                 <div class="hidden md:flex items-center space-x-4">
                     <a href="/kontakt"
-                        class="px-6 py-3 rounded-full border border-[#B4CBD1] text-[#B4CBD1] hover:bg-[#B4CBD1] hover:text-white transition-colors lg:text-lg font-medium">
+                        class="px-4 py-2 rounded-full border border-[#B4CBD1] text-[#B4CBD1] hover:bg-[#B4CBD1] hover:text-white transition-colors lg:text-lg font-medium">
                         Kontakt
                     </a>
 
-                    <a class="whitespace-nowrap py-3 px-6 rounded-full bg-[#B4CBD1] text-white hover:bg-[#8BA3A9] transition-colors lg:text-xl font-medium"
+                    <a class="whitespace-nowrap py-2 px-4 rounded-full bg-[#B4CBD1] text-white hover:bg-[#8BA3A9] transition-colors lg:text-xl font-medium"
                         href="https://www.znanylekarz.pl/placowki/klinika-orthocare" rel="nofollow"
                         data-zlw-facility="klinika-orthocare" data-zlw-type="facility-button-with-saas-only"
-                        data-zlw-saas-only="true">Zarezerwuj wizytę</a>
+                        data-zlw-saas-only="true">Umów wizytę</a>
                     <script>!function ($_x, _s, id) { var js, fjs = $_x.getElementsByTagName(_s)[0]; if (!$_x.getElementById(id)) { js = $_x.createElement(_s); js.id = id; js.src = "//platform.docplanner.com/js/widget.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "zl-widget-s");</script>
 
                 </div>
@@ -115,18 +115,18 @@
             <div class="md:hidden hidden mt-4 space-y-4">
                 <a href="/klinika" class="block text-gray-600 hover:text-[#B4CBD1] text-lg font-medium">Klinika</a>
                 <a href="/zespol" class="block text-gray-600 hover:text-[#B4CBD1] text-lg font-medium">Zespół</a>
-                <a href="/zabiegi" class="block text-gray-600 hover:text-[#B4CBD1] text-lg font-medium">Zabiegi</a>
-                <a href="/cennik" class="block text-gray-600 hover:text-[#B4CBD1] text-lg font-medium">Cennik</a>
-                <a href="/blog" class="block text-gray-600 hover:text-[#B4CBD1] text-lg font-medium">Blog</a>
+                <a href="/cennik" class="block text-gray-600 hover:text-[#B4CBD1] text-lg font-medium">Usługi i cennik</a>
+                <a href="/blog" class="block text-gray-600 hover:text-[#B4CBD1] text-lg font-medium">Poradnik zdrowia</a>
                 <div class="pt-4 space-y-2">
                     <a href="/kontakt"
                         class="block w-full px-6 py-3 text-center rounded-full border border-[#B4CBD1] text-[#B4CBD1] hover:bg-[#B4CBD1] hover:text-white transition-colors text-lg font-medium">
                         Kontakt
                     </a>
-                    <a class="px-6 py-3 rounded-full bg-[#B4CBD1] text-white hover:bg-[#8BA3A9] transition-colors text-lg font-medium"
+                    <a 
+                    class="block w-full px-6 py-3 text-center rounded-full border bg-[#B4CBD1] text-white hover:bg-[#8BA3A9] transition-colors text-lg font-medium"
                         href="https://www.znanylekarz.pl/placowki/klinika-orthocare" rel="nofollow"
                         data-zlw-facility="klinika-orthocare" data-zlw-type="facility-button-with-saas-only"
-                        data-zlw-saas-only="true">Zarezerwuj wizytę</a>
+                        data-zlw-saas-only="true">Umów wizytę</a>
                     <script>!function ($_x, _s, id) { var js, fjs = $_x.getElementsByTagName(_s)[0]; if (!$_x.getElementById(id)) { js = $_x.createElement(_s); js.id = id; js.src = "//platform.docplanner.com/js/widget.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "zl-widget-s");</script>
 
                 </div>
@@ -137,89 +137,85 @@
     <main class="w-full max-w-full overflow-x-hidden">
         <!-- Jumbotron with background video and big text (full width) -->
         <section class="relative w-full h-[400px] md:h-[600px] flex items-center justify-center overflow-hidden mb-8">
-            <video class="absolute top-0 left-0 w-full h-full object-cover" src="assets/template.mp4" autoplay loop
-                muted playsinline></video>
+            <img class="absolute top-0 left-0 w-full h-full object-cover blur-sm" src="assets/jumbotron.jpg"></video>
             <div class="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black bg-opacity-40">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-white text-center drop-shadow-lg">
-                    Medycyna oparta na doświadczeniu</h1>
-                <p class="mt-6 text-lg md:text-2xl text-white text-center max-w-2xl drop-shadow mb-8">co tu wpisać?</p>
+                    Medycyna oparta na doświadczeniu
+                </h1>
                 <div class="flex flex-col md:flex-row gap-4 mt-4">
 
                     <a class="px-8 py-4 rounded-full bg-[#B4CBD1] text-white hover:bg-[#8BA3A9] transition-colors text-lg font-medium text-center"
                         href="https://www.znanylekarz.pl/placowki/klinika-orthocare" rel="nofollow"
                         data-zlw-facility="klinika-orthocare" data-zlw-type="facility-button-with-saas-only"
-                        data-zlw-saas-only="true">Zarezerwuj wizytę</a>
+                        data-zlw-saas-only="true">Umów wizytę</a>
                     <script>!function ($_x, _s, id) { var js, fjs = $_x.getElementsByTagName(_s)[0]; if (!$_x.getElementById(id)) { js = $_x.createElement(_s); js.id = id; js.src = "//platform.docplanner.com/js/widget.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "zl-widget-s");</script>
 
-                    <a href="/zabiegi"
-                        class="px-8 py-4 rounded-full border-2 border-white text-white hover:bg-white hover:text-[#B4CBD1] transition-colors text-lg font-medium text-center">
-                        Nasze zabiegi
-                    </a>
                 </div>
             </div>
         </section>
 
         <!-- About Section: Text left, photo right -->
-        <section class="bg-gray-50 rounded-3xl p-6 md:py-12 flex flex-col md:flex-row items-center gap-8 mb-12 px-2 lg:px-[10%]">
+        <section
+            class="bg-gray-50 rounded-3xl px-6 md:pt-12 flex flex-col md:flex-row items-center gap-8 px-2 lg:px-[10%]">
             <div class="flex-1 w-full md:w-1/2 relative">
                 <!-- Semi-opaque logo background -->
                 <img src="assets/logo4.png" alt="OrthoCare Logo" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[.08] pointer-events-none select-none z-0  
                      style=" width: 1500px !important; min-width: 1500px !important;" />
                 <!-- Text content (z-10 to be above the logo) -->
                 <div class="relative z-10">
-                    <h2 class="text-5xl font-serif font-semibold mb-6">Medycyna oparta na doświadczeniu                    </h2>
-                    <p class="mb-4 text-lg">W OrthoCare łączymy nowoczesną ortopedię z indywidualnym podejściem do
-                        każdego
-                        pacjenta.
+                    <h2 class="text-5xl font-serif font-semibold mb-6">Medycyna oparta na doświadczeniu</h2>
+                    <p class="mb-4 text-lg">
+                        W OrthoCare łączymy nowoczesną ortopedię z indywidualnym podejściem do każdego pacjenta. <br />
                         Specjalizujemy się w małoinwazyjnych zabiegach, precyzyjnej diagnostyce i kompleksowej opiece
-                        nad
-                        narządem ruchu – od leczenia bólu kręgosłupa po artroskopię stawów.
+                        nad narządem ruchu – od leczenia bólu kręgosłupa po artroskopię stawów. <br />
                         Tworzymy zespół lekarzy i specjalistów, którzy wierzą, że skuteczne leczenie zaczyna się od
-                        zaufania
-                        i
-                        czasu poświęconego pacjentowi. Pracujemy z pasją, bazując na wiedzy, doświadczeniu i najnowszych
-                        standardach medycyny.
-                        Poznaj nas bliżej i zobacz, jak możemy Ci pomóc.</p>
+                        zaufania i czasu poświęconego pacjentowi. Pracujemy z pasją, bazując na wiedzy, doświadczeniu i
+                        najnowszych standardach medycyny. <br />
+
+                        <br /> <br />
+                        <b class="text-2xl">Poznaj nas bliżej i zobacz, jak możemy Ci pomóc.</b>
+                    </p>
                 </div>
             </div>
-            <div class="flex-1 w-full md:w-1/2 flex justify-center">
-                <img src="assets/stock.png" alt="Zespół kliniki"
-                    class="rounded-3xl shadow-lg object-cover w-full max-w-md h-auto">
-            </div>
+        </section>
+
+        <section class="w-full flex justify-center items-center">
+            <img src="assets/alldoctors.jpg" alt="Wszyscy lekarze OrthoCare"
+                class="w-full h-auto shadow-lg object-cover" />
         </section>
 
 
         <!-- Steps Section -->
         <section class="w-full py-16 bg-white">
             <div class="max-w-7xl mx-auto px-0 flex flex-col items-center">
-                <h2 class="text-4xl md:text-5xl font-serif font-semibold text-center mb-6">Jak to wygląda w praktyce?
-                </h2>
-                <p class="text-center text-lg text-gray-700 mb-12 max-w-3xl">W OrthoCare wierzymy, że dobra medycyna nie
-                    zaczyna się od prześwietlenia — tylko od
-                    rozmowy.
-                    Nie działamy na skróty. Nie przepychamy przez procedury.
-                    <br />
-                    <br />
-                    Skupiamy się na tym, co naprawdę
-                    ważne: rozpoznaniu problemu i znalezieniu najlepszego rozwiązania — bez zbędnych etapów,
-                    bez domysłów.
-                </p>
+                <!-- About Section: Text left, photo right -->
+                <section
+                    class="rounded-3xl p-6 md:py-12 flex flex-col md:flex-row items-center gap-8 px-2 lg:px-[10%]">
+                    <div class="flex-1 w-full md:w-1/2 relative">
+                        <!-- Text content (z-10 to be above the logo) -->
+                        <div class="relative z-10">
+                            <h2 class="text-5xl font-serif font-semibold mb-6">Jak to wygląda w praktyce?</h2>
+                            <p class="mb-4 text-lg">
+                                W OrthoCare wierzymy, że dobra medycyna nie zaczyna się od prześwietlenia — tylko od
+rozmowy. <br />
+Nie działamy na skróty. Nie przepychamy przez procedury. Skupiamy się na tym, co naprawdę
+ważne: rozpoznaniu problemu i znalezieniu najlepszego rozwiązania — bez zbędnych etapów,
+bez domysłów. 
+
+                                
+                            </p>
+                        </div>
+                    </div>
+                </section>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
                     <!-- Step 1 -->
                     <div class="flex flex-col items-center text-center">
                         <div class="relative w-full">
-                            <img src="assets/stock.png" alt="Konsultacja z ekspertem"
+                            <img src="assets/1z3.jpeg" alt="Konsultacja z ekspertem"
                                 class="rounded-3xl w-full h-72 object-cover mb-0">
-                            <div
-                                class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white border border-gray-200 w-16 h-16 flex items-center justify-center rounded-full text-2xl font-semibold shadow">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-                                </svg>
-                            </div>
+
                         </div>
-                        <div class="mt-10">
+                        <div class="mt-5">
                             <h3 class="text-xl font-bold mb-2">Rozmowa, która naprawdę coś wnosi</h3>
                             <p class="text-gray-700">Na początku po prostu słuchamy. Zadajemy pytania, dopytujemy o
                                 szczegóły, analizujemy
@@ -232,19 +228,11 @@
                     <!-- Step 2 -->
                     <div class="flex flex-col items-center text-center">
                         <div class="relative w-full">
-                            <img src="assets/stock.png" alt="Zabieg dostosowany do Ciebie"
+                            <img src="assets/2z3.jpeg" alt="Zabieg dostosowany do Ciebie"
                                 class="rounded-3xl w-full h-72 object-cover mb-0">
-                            <div
-                                class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white border border-gray-200 w-16 h-16 flex items-center justify-center rounded-full text-2xl font-semibold shadow">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
-                                </svg>
-                            </div>
                         </div>
-                        <div class="mt-10">
-                            <h3 class="text-xl font-bold mb-2">Leczenie dostosowane do Ciebie</h3>
+                        <div class="mt-5">
+                            <h3 class="text-xl font-bold mb-2">Leczenie, które ma sens</h3>
                             <p class="text-gray-700">Gdy wiemy, z czym mamy do czynienia, działamy. Czasem wystarczy
                                 leczenie zachowawcze,
                                 innym razem potrzebny jest zabieg.
@@ -255,19 +243,12 @@
                     <!-- Step 3 -->
                     <div class="flex flex-col items-center text-center">
                         <div class="relative w-full">
-                            <img src="assets/stock.png" alt="Opieka po zabiegu"
+                            <img src="assets/3z3.jpeg" alt="Opieka po zabiegu"
                                 class="rounded-3xl w-full h-72 object-cover mb-0">
-                            <div
-                                class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white border border-gray-200 w-16 h-16 flex items-center justify-center rounded-full text-2xl font-semibold shadow">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </div>
+                      
                         </div>
-                        <div class="mt-10">
-                            <h3 class="text-xl font-bold mb-2">Opieka, która nie kończy się na drzwiach gabinetu</h3>
+                        <div class="mt-5">
+                            <h3 class="text-xl font-bold mb-2">Opieka bez ram czasowych</h3>
                             <p class="text-gray-700">Po zabiegu czy konsultacji jesteśmy nadal dostępni. Umawiamy
                                 kontrole, rozwiewamy
                                 wątpliwości, prowadzimy pacjenta dalej — jeśli tego potrzebuje.
@@ -277,6 +258,24 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- CTA Section -->
+        <section
+            class="relative w-full  overflow-visible bg-gradient-to-r from-[#7697A1] to-[#1D343B] py-16 md:py-24 flex flex-col md:flex-row items-center justify-center px-0 overflow-hidden">
+            <!-- Background Image -->
+            <img src="assets/logo4.png" alt="Background"
+                class="absolute w-[500px]  overflow-visible object-cover opacity-10 z-0 left-[10%] top-[25%]" />
+
+            <div class="relative z-10 flex justify-end w-3/4 px-12">
+                <a href="#"
+                    class="inline-block px-12 md:px-24 py-4 rounded-full bg-white text-[#1D343B] font-semibold shadow hover:bg-gray-100 transition md:text-5xl">
+                    Umów wizytę
+                </a>
+            </div>
+        </section>
+
+
 
         <!-- Opinions Carousel Section -->
         <section class="w-full py-16 bg-white">
@@ -320,22 +319,15 @@
                         <!-- Opinion 4 -->
                         <div class="opinion-slide w-full flex-shrink-0">
                             <div class="h-full border rounded-2xl border-[#B4CBD1] p-8 flex flex-col justify-between">
-                                <p class="text-lg italic mb-4">"Chirurg plastyczny jak najbardziej godny polecenia.
-                                    Pierwszą konsultację bardzo miło, lekarka wyjaśniła mi dokładnie, czego się
-                                    spodziewać, jak będzie wyglądać zabieg oraz rekonwalescencja. Rezultaty przerosły
-                                    moje oczekiwania i piszę to z radością – doskonale wykonana praca. Dziękuję i
-                                    pozdrawiam."</p>
+                                <p class="text-lg italic mb-4">"Byłam u Pana doktora z powodu zespołu cieśnin nadgarstka prawej ręki i bólem lewej ręki w okolicach łokcia. Pan doktor wykonał USG na obu rękach i dodatkowo obejrzał płytki z rezonansu odcinka szyjnego i lędźwiowego kręgosłupa. Wszystko mi wyjaśnił i zaproponował konkretne dalsze kroki. Profesjonalne podejście, zaangażowanie i życzliwość sprawiły, że poczułam się naprawdę zaopiekowana. Polecam dr.Tomasza Markowskiego z całego serca- to lekarz któremu można zaufać."</p>
                                 <span class="font-medium mt-4">Paulina</span>
                             </div>
                         </div>
                         <!-- Opinion 5 -->
                         <div class="opinion-slide w-full flex-shrink-0">
                             <div class="h-full border rounded-2xl border-[#B4CBD1] p-8 flex flex-col justify-between">
-                                <p class="text-lg italic mb-4">"Bardzo polecam dr. Tomasza Markowskiego, świetny
-                                    specjalista z olbrzymią wiedzą. Na 1 wizycie już bezbłędnie ustala źródło problemu i
-                                    błyskawicznie wdraża skuteczne leczenie. Warto bardzo umówić się na wizytę.Pacjent
-                                    czuję się szczerze zaopiekowany przez Pana Doktora."</p>
-                                <span class="font-medium mt-4">Agnieszka</span>
+                                <p class="text-lg italic mb-4">"Bardzo polecam Dr. Michała Papiewskiego. Jest ortopedą profesjonalnym z dużym zaangażowaniem do pacjenta. Ma dużą wiedzę i doświadczenie co wzbudza zaufanie. Rzetelnie i konkretnie przedstawił mi proces leczenia i rechabilitacji łokcia tenisisty. POLECAM"</p>
+                                <span class="font-medium mt-4">Jadwiga</span>
                             </div>
                         </div>
                         <!-- Add more opinions here as needed -->
@@ -353,22 +345,6 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section
-            class="relative w-full  overflow-visible bg-gradient-to-r from-[#7697A1] to-[#1D343B] py-16 md:py-24 flex flex-col md:flex-row items-center justify-center px-0 overflow-hidden">
-            <!-- Background Image -->
-            <img src="assets/logo4.png" alt="Background"
-                class="absolute w-1/2 h-full  overflow-visible object-cover opacity-10 z-0 left-[10%] top-[5%]" />
-
-            <div class="relative z-10 flex justify-end w-3/4 px-12">
-                <a href="#"
-                    class="inline-block px-12 md:px-24 py-4 rounded-full bg-white text-[#1D343B] font-semibold shadow hover:bg-gray-100 transition md:text-5xl">
-                    Zarezerwuj wizytę
-                </a>
-            </div>
-        </section>
-
-
 
         </section>
 
@@ -384,7 +360,7 @@
                         class="absolute inset-0 w-full h-full object-contain opacity-10 select-none" />
                 </div>
                 <div>
-                    © 2025 Klinika OrthoCare. Wszelkie prawa zastrzeżone oraz Polityka cookies i Regulamin serwisu w stopce
+                    © 2025 Klinika OrthoCare. Wszelkie prawa zastrzeżone
                 </div>
             </div>
             <!-- Right: Links and Partners -->
@@ -428,8 +404,12 @@
                     <div>
                         <div class="font-semibold mb-2">Nasi partnerzy:</div>
                         <div class="flex items-center gap-4">
-                            <img src="assets/stock.png" alt="Partner 1" class="h-8 w-auto bg-white rounded p-1" />
-                            <img src="assets/stock.png" alt="Partner 2" class="h-8 w-auto bg-white rounded p-1" />
+                            <a target="_blank" href="https://warsaweagles.com/">
+                                <img src="assets/eagles.png" alt="Partner 1" class="h-16 w-auto bg-white rounded p-1" />
+                            </a>
+                            <a target="_blank" href="https://www.rplusradom.pl/">
+                                <img src="assets/Rehabilitacjaplus.png" alt="Partner 2" class="h-16 w-auto bg-white rounded p-1" />
+                            </a>
                         </div>
                     </div>
                 </div>
