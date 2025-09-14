@@ -7,108 +7,78 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen overflow-x-hidden">
+<body class="bg-white min-h-screen overflow-x-hidden">
   <!-- Header copied from index.html -->
-  <!--HEADER-->
-  <!-- Will be replaced with actual header code from index.html -->
   <header id="main-header"></header>
   
-  <!-- Hero Section with hq.jpg -->
-  <section class="relative w-full h-[60vh] min-h-[500px] overflow-hidden">
-    <img src="assets/hq.jpg" alt="OrthoCare Clinic" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="absolute inset-0 flex items-center justify-center">
-      <div class="text-center text-white">
-        <h1 class="text-5xl md:text-6xl font-serif font-bold mb-4">Jesteśmy tu dla Ciebie</h1>
-      </div>
-    </div>
-  </section>
-  
-  <main class="w-full max-w-full overflow-x-hidden min-h-[60vh] flex items-center justify-center">
-  
-
-        <!-- Contact Section -->
-        <section class="w-full pt-4 pb-16 bg-white relative">
-
-            
-
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto">
-                  <!-- Adres -->
-                  <div class="bg-white rounded-3xl border-0 p-8 flex flex-col items-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer group">
-                      <div class="text-[#B4CBD1] text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                              stroke="currentColor" class="w-12 h-12">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                          </svg>
-                      </div>
-                      <div class="font-bold text-xl mb-3 text-gray-800">Adres</div>
-                      <div class="text-gray-600 text-center mb-4 leading-relaxed">ul. Dębowa 2<br />26-600 Radom</div>
-                      <a href="https://maps.google.com/?q=marsz.+Ferdynanda+Focha+12%2F9,+26-600+Radomhttps://maps.app.goo.gl/4WKhwq3uxSAymzo37" 
-                         target="_blank" 
-                         class="inline-flex items-center px-6 py-3 bg-[#B4CBD1] text-white rounded-full hover:bg-[#8BA3A9] transition-colors duration-300 font-medium group-hover:bg-[#8BA3A9]">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 mr-2">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                          </svg>
-                          Otwórz w Mapach
-                      </a>
-                  </div>
-                  
-                  <!-- Godziny otwarcia -->
-                  <div class="bg-white rounded-3xl border-0 p-8 flex flex-col items-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                      <div class="text-[#B4CBD1] text-4xl mb-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                              stroke="currentColor" class="w-12 h-12">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                      </div>
-                      <div class="font-bold text-xl mb-3 text-gray-800">Godziny otwarcia</div>
-                      <div class="text-gray-600 text-center mb-4 leading-relaxed">
-                          <div class="font-medium text-[#B4CBD1]">poniedziałek-piątek</div>
-                          <div class="text-lg">8:00 - 20:00</div>
-                          <div class="text-sm text-gray-500 mt-2">sobota, niedziela i święta: nieczynne</div>
-                      </div>
-                  </div>
-                  
-                  <!-- Telefon -->
-                  <div class="bg-white rounded-3xl border-0 p-8 flex flex-col items-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer group">
-                      <div class="text-[#B4CBD1] text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                              stroke="currentColor" class="w-12 h-12">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                          </svg>
-                      </div>
-                      <div class="font-bold text-xl mb-3 text-gray-800">Telefon</div>
-                      <div class="text-gray-600 text-center mb-4 leading-relaxed">
-                          <div class="mb-2">+48 889 817 012</div>
-                          <div>+48 889 834 936</div>
-                      </div>
-                      <div class="flex flex-col gap-2 w-full">
-                          <a href="tel:+48889817012" 
-                             class="inline-flex items-center justify-center px-6 py-3 bg-[#B4CBD1] text-white rounded-full hover:bg-[#8BA3A9] transition-colors duration-300 font-medium group-hover:bg-[#8BA3A9]">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 mr-2">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                              </svg>
-                              Zadzwoń teraz
-                          </a>
-                          <a href="tel:+48889834936" 
-                             class="inline-flex items-center justify-center px-6 py-3 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-colors duration-300 font-medium">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 mr-2">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                              </svg>
-                              Drugi numer
-                          </a>
-                      </div>
-                  </div>
-              </div>
+  <main class="w-full max-w-full overflow-x-hidden min-h-screen">
+    <!-- Main Content Section -->
+    <section class="w-full min-h-screen bg-white pb-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Top Section - Contact Information -->
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-5xl font-bold text-black mb-4">Jesteśmy tu dla Ciebie</h1>
+          <p class="text-xl text-black mb-8">Zadzwoń i umów się na konsultację</p>
+          
+          <!-- Phone Number -->
+          <div class="flex items-center justify-center mb-8">
+            <div class="flex items-center space-x-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 text-black">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <a href="tel:889817012" class="text-3xl font-bold text-black hover:underline focus:outline-none focus:ring-2 focus:ring-[#B4CBD1] rounded">
+                889 817 012
+              </a>
+            </div>
           </div>
-      </section>
-    </main>
+          
+       
+        </div>
+        
+        <!-- Bottom Section - Building Image and Clinic Details -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <!-- Left Column - Building Image -->
+          <div>
+            <img src="assets/hq.jpg" alt="OrthoCare Clinic Building" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+          </div>
+          
+          <!-- Right Column - Clinic Details -->
+          <div class="space-y-8">
+            <!-- Logo -->
+            <div class="text-left">
+              <h2 class="text-4xl font-bold text-black mb-2">OrthoCare.</h2>
+              <p class="text-xl text-black tracking-widest">klinika</p>
+            </div>
+            
+            <!-- Registration Hours -->
+            <div class="text-left">
+              <h3 class="text-xl font-bold text-black mb-4">Rejestracja telefoniczna</h3>
+              <div class="text-lg text-black space-y-1">
+                <p>poniedziałek-piątek 9-17</p>
+                <p>sobota 9-14</p>
+              </div>
+            </div>
+            
+            <!-- Address -->
+            <div class="text-left">
+              <p class="text-lg text-black">Radom ul. Dębowa 2</p>
+            </div>
+            
+            <!-- Map Button -->
+            <div class="text-left">
+              <a href="https://maps.google.com/?q=ul.+Dębowa+2,+26-600+Radom" 
+                 target="_blank" 
+                 class="inline-flex items-center px-8 py-4 bg-[#B4CBD1] text-black rounded-full hover:bg-[#8BA3A9] transition-colors duration-300 font-medium text-lg">
+                Mapa dojazdu
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
   <footer id="main-footer"></footer>
   <script src="js/main.js"></script>
   <script>
@@ -121,4 +91,4 @@
     });
   </script>
 </body>
-</html> 
+</html>
