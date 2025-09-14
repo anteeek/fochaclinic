@@ -25,7 +25,7 @@
 
       Nasz zespół tworzą doświadczeni lekarze ortopedzi, a pacjenci mają również możliwość skorzystania z
 konsultacji neurologicznych i reumatologicznych — w ramach współpracy z lekarzami innych
-specjalizacji. Pracujemy zespołowo i interdyscyplinarnie — także we współpracy z <b>Rehabilitacją Plus</b>,
+specjalizacji. Pracujemy zespołowo i interdyscyplinarnie — także we współpracy z <b>Rehabilitacją Plus</b>,
 czyli zespołem znakomitych fizjoterapeutów. Dzięki temu pacjenci mają zapewnioną płynną
 kontynuację terapii i szybszy powrót do zdrowia.
 
@@ -62,6 +62,90 @@ ich zdrowie i formę na najwyższym poziomie sportowym.
   uwagą i pełnym profesjonalizmem.</b>
 
     </div>
+    
+    <!-- Photo Gallery -->
+    <section class="w-full mt-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-serif font-semibold text-gray-800 mb-8 text-center">Galeria zdjęć</h2>
+        
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Photo 1 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-1')">
+            <img src="assets/gallery/strona1.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 2 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-2')">
+            <img src="assets/gallery/strona2 (1).jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 3 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-3')">
+            <img src="assets/gallery/strona4.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 4 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-4')">
+            <img src="assets/gallery/strona5.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 5 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-5')">
+            <img src="assets/gallery/strona6.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 6 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-6')">
+            <img src="assets/gallery/strona7.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 7 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-7')">
+            <img src="assets/gallery/strona8.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 8 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-8')">
+            <img src="assets/gallery/strona9.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 9 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-9')">
+            <img src="assets/gallery/strona10.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 10 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-10')">
+            <img src="assets/gallery/strona11.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 11 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-11')">
+            <img src="assets/gallery/strona12.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Photo 12 -->
+          <div class="gallery-item aspect-square overflow-hidden rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300" onclick="openModal('gallery-12')">
+            <img src="assets/gallery/strona13.jpg" alt="Klinika OrthoCare" class="w-full h-full object-cover">
+          </div>
+          
+ 
+        </div>
+      </div>
+    </section>
+    
+    <!-- Modal for Gallery -->
+    <div id="gallery-modal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+      <div class="relative max-w-4xl max-h-full">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors z-10">
+          ×
+        </button>
+        <img id="modal-image" src="" alt="" class="max-w-full max-h-full object-contain">
+        <div id="modal-caption" class="absolute bottom-4 left-4 text-white text-lg bg-black bg-opacity-50 px-4 py-2 rounded">
+        </div>
+      </div>
+    </div>
   </main>
   <!-- Footer copied from index.html -->
   <!--FOOTER-->
@@ -76,6 +160,43 @@ ich zdrowie i formę na najwyższym poziomie sportowym.
       document.getElementById('main-header').innerHTML = doc.querySelector('header').outerHTML;
       document.getElementById('main-footer').innerHTML = doc.querySelector('footer').outerHTML;
     });
+
+    // Gallery modal functions
+    function openModal(imageId) {
+      const modal = document.getElementById('gallery-modal');
+      const modalImage = document.getElementById('modal-image');
+      const modalCaption = document.getElementById('modal-caption');
+      
+      // Get the clicked image
+      const clickedImage = document.querySelector(`[onclick="openModal('${imageId}')"] img`);
+      
+      modalImage.src = clickedImage.src;
+      modalImage.alt = clickedImage.alt;
+      modalCaption.textContent = clickedImage.alt;
+      
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('gallery-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when clicking outside the image
+    document.getElementById('gallery-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
   </script>
 </body>
-</html> 
+</html>
